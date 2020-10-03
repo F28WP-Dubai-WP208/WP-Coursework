@@ -10,3 +10,6 @@ Game Scenario : 3D Car game
 Car modifying options
 3 Weather settings
 
+Meeting at 3pm: Team discussed mockups and division of tasks
+JustInMind being used for prototyping
+
