@@ -14,3 +14,6 @@ Car modifying options
 
 we will be using justinmind for the mockup of our game 
 
+Meeting at 3pm: Team discussed mockups and division of tasks
+JustInMind being used for prototyping
+
