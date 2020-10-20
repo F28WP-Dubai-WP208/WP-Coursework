@@ -29,6 +29,10 @@ Tuesday: Meeting at 11:30: progress discussed
 Found another maze game
 modified it to suit our Streetscape
 
+Monday: Meeting at 12: progress discussed
+Action plan going into the project
+Ways to implement graphics
+
 
 
 
