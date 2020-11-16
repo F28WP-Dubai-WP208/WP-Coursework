@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="/style.css" media="all" />
+    <script defer src="/options.js" type="text/javascript"></script>
+
+    <title>Maze Game Deluxe</title>
+</head>
+<header>
+    <div class = "flex">
+        <div class = "logo">
+            <p>Streetscapes</p>
+
+        </div>
+        <nav>
+            <button id="nav-toggle" class="hamburger-menu">
+                <span class="strip"></span>
+                <span class="strip"></span>
+                <span class="strip"></span>
+            </button>
+            <ul id="nav-menu-continer">
+                <li><a href="/">Home</a></li>
+                {{#if user}}
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/auth/logout">Logout</a></li>
+                {{else}}
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                {{/if}}
+                <li><a href="/contact">Contact</a></li>
+
+
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<main>
+    <section id = "car-picture">
+        <div class="car-game-text">
+            <h1>The Best <span>Car Maze</span> Game Out There</h1>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            In tempor velit eget nisi porttitor maximus. Nulla sed nulla nunc. 
+            Proin sem nulla, varius sed dolor vitae, venenatis vulputate tellus. 
+            Etiam in sem eu sapien malesuada tincidunt. Morbi tristique sit amet justo at condimentum. 
+            Mauris a ligula et enim fringilla mattis quis sit amet nunc. 
+            Sed fringilla ullamcorper neque, vitae ultricies massa suscipit nec.</h5>
+
+            <button type="open" class="circle"  onClick="openOption()">
+                <div class="circle-txt">
+                  Let's start!
+                 </div>
+            </button>
+
+            <div class= "cm-popup" id="Options">
+                <div class="multi-content">
+                    <a href="/maze">
+                    <button type="option1" class="btn-single">
+                        <p>Single Player</p>
+                        </button>
+                    </a>
+                     
+                    <button type="option2" class="btn-multi" onClick="openForm()">
+                      <p> Multi Player</p>
+                    </button>
+                    <button type="option4" class="btn-cancel" onClick="closeOption()">Back</button>
+                   
+                    <div class="form-popup" id="myForm">
+                        <div class="form-container">
+                            <h1>Players</h1>
+                            <label for="player1"><b>Player 1</b></label>
+                            <input type="text" placeholder="Enter Player1" name="player1">
+
+                            <label for="player2"><b>Player 2</b></label>
+                            <input type="text" placeholder="Enter Player2" name="player2">
+                    <a href="/maze2">
+                    <button type="option5" class="btn-start">Start</button>
+                     </a>
+                    <button type="option4" class="btn-cancel" onClick="closeForm()">Back</button>
+                    
+
+                 </div>
+                </div>
+        </div>
+        </section>
+
+<body>
+
+<section id="posts-comments">
+    <div class="flex">
+        <div class="game-maze">
+            <img src="pics/logo.jpg"/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor velit eget nisi porttitor maximus.</p>
+        </div>
+       
+        <div class="posts-comments-box">
+            <h3>Latest Posts</h3>
+            <div class="post-item">
+                <img src="pics/pp1.jpg" />
+                <div>
+                    <h5>June 21, 2019</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor velit eget nisi porttitor maximus. </p>
+                    <small>By: Admin</small>
+                </div>
+            </div>
+
+            <div class="post-item">
+                <img src="pics/pp2.jpg"/>
+                <div>
+                    <h5>June 21, 2019</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor velit eget nisi porttitor maximus. </p>
+                    <small>By: Admin</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="posts-comments-box">
+            <h3>Top Comments</h3>
+            <div class="comments-item">
+                <img src="pics/pp4.jpg"/>
+                <div>
+                    <p><span class="author">Jane Doe</span><span>on</span>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <h5> June 21,2019</h5>
+                
+                </div>
+            </div>
+
+            <div class="comments-item">
+                <img src="pics/pp5.jpg"/>
+                <div>
+                    <p><span class="author">Jane Doe</span><span>on</span>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <h5> June 21,2019</h5>
+                
+                </div>  
+            </div>
+
+            <div class="comments-item">
+                <img src="pics/pp6.jpg"/>
+                <div>
+                    <p><span class="author">Jane Doe</span><span>on</span>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <h5> June 21,2019</h5>
+                
+                </div>   
+            </div>
+
+            <div class="comments-item">
+                <img src="pics/pp7.jpg"/>
+                <div>
+                    <p><span class="author">Jane Doe</span><span>on</span>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <h5> June 21,2019</h5>
+                
+                </div>  
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</section>
+</main>
+<footer>
+    <div class="flex">
+        <small><p>Copyright &copy; 2020 All rights reserved | This template is made with <span class = "footer-heart">&#9829;</span>by WP-208.</p></small>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#">Blog</a>
+            </li>
+
+            <li>
+                <a href="#">Forum</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

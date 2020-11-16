@@ -1,0 +1,301 @@
+@mixin transition {
+    transition-property: background-color opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+html {
+    box-sizing: border-box;
+}
+  
+  *,* ::before, *::after {
+    box-sizing: border-box;
+  }
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+header{
+    background-color: #8B008B;
+    padding: 20px 0;
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid #FF8320;
+
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: auto;
+    border-spacing: 0px;
+    border-collapse: initial;
+    position: absolute;
+
+}
+.hamburger-menu{
+    background-color: transparent;
+    border: 1px solid #FF8320;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display:none;
+}
+.hamburger-menu .strip{
+    display: block;
+    height: 1px;
+    background-color: #FF8320;
+    margin: 4px 0;
+    
+}
+nav ul{
+    list-style:none;
+    padding: 0;
+    margin: 20px;
+    position: absolute;
+    left: 40%;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 50px;
+}
+
+nav ul li a{
+    color: #eee;
+    font-weight: 600;
+
+}
+
+nav ul li a:hover{
+    color: #ff8320;
+}
+.logo p{ 
+    font-family: myFirstFont;
+    height: 30%;
+   src: url(sansation_light.woff);
+   font-weight: bold;
+   font-size: 3em;
+   position: absolute;
+   bottom: 0%;
+  
+}
+#car-picture{
+    background: url("pics/bg1.jpg") no-repeat;
+    background-size: cover;
+    height: 705px;
+    
+}
+
+#instructions {
+    width: 300px;
+    height: 250px;
+    padding: 0px;
+    border: 5px solid gray;
+    background-color: rgba(72, 151, 89, 0.3);
+    margin: 0;
+    position: absolute;
+    top: 12%;
+}
+#instructions .car{
+    position: relative;
+    top: 60px;
+    left: 0px;
+    
+}
+#instructions .arrowup{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+#instructions .arrowb{
+    position: relative;
+    top: 80px;
+    right: 32px;
+}
+
+#instructions .arrowl{
+    position: relative;
+    top: 51px;
+    right: 120px;
+}
+#instructions .arrowr{
+    position: relative;
+    bottom: 3px;
+    left: 50px;
+}
+h1{
+    line-height: 1.5;
+    font-weight: 200;
+    font-size: 0.8em;
+    margin: 0.5em 0;
+    position: relative;
+    top: 0;
+    right: 10px;
+
+}
+
+#mazeContainer {
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    opacity: 0;
+    display: inline-block;
+    background-color:   rgba(39, 143, 61, 0.3);
+    margin: 45px;
+    
+    
+}
+
+input,
+select {
+    @include transition;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.30);
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
+}
+
+
+.custom-select {
+    display: inline-block;
+    position: absolute;
+    left:45%;
+   
+    
+}
+
+#Message-Container {
+    visibility: hidden;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 1;
+    #message {
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: -150px;
+    }
+}
+
+#page {
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    #menu {
+        margin: auto;
+        padding: 10px;
+        height: 45px;
+        box-sizing: border-box;
+        h1 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 3.2rem;
+        }
+    }
+    #view {
+        position: absolute;
+        top:65px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 70%;
+        height: auto;
+           
+    }
+}
+
+.border {
+    border: 7px green solid;
+    border-radius: 15px;
+}
+
+
+
+#gradient {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background-size: 100% 250%;
+    animation: Gradient 45s ease infinite;
+}
+footer{
+    background-color: #252525;
+    padding: 25px 0 20px;
+}
+
+footer small .footer-heart{
+    font-size: 16px;
+    color: #ddd;
+}
+footer small p{
+    color: #ddd;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    
+
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer ul li a{
+    color: #ddd;
+    font-size: 0.8em;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 400px) {
+     input, select{
+         width: 120px;
+     }
+ }
