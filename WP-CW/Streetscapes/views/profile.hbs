@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/register.css">
+  <title>Profile</title>
+</head>
+<body>
+<header>
+    <div class = "flex">
+        <div class = "logo">
+            <a href = "#"><img src="/pics/logo.jpg" width="150" height="60"  alt="CarGame Logo"/>
+
+        </div>
+        <nav>
+            <button id="nav-toggle" class="hamburger-menu">
+                <span class="strip"></span>
+                <span class="strip"></span>
+                <span class="strip"></span>
+            </button>
+            <ul id="nav-menu-continer">
+                <li><a href="/">Home</a></li>
+                <li><a href="/profile"><span>Profile</span></a></li>
+                <li><a href="/auth/logout">Logout</a></li>
+                <li><a href="/contact">Contact</a></li>
+
+
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<section id = "car-picture">
+  <div class="container">
+    <div class="row">
+      <div class="col1">
+        <div class="card">
+          <div class="avatar-ctn">
+            <img src="/pics/profile.jpg" class="avatar" alt="user profile picture"/>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{user.name}}</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">{{user.email}}</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col2">
+        <div class="card-text">
+          <div class="card-header">
+            Profile Page
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hey {{user.name}} welcome back</h5>
+            <p class="card-text">This is your profile page where you can add all the information about yourself</p>
+            <a href="#" class="btn">Go Somewhere</a>
+          </div>
+          <div class="card-footer">
+            Streetscapes - Project
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+
+</body>
+</section>
+</html>
