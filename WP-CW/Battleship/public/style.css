@@ -1,0 +1,777 @@
+html {
+    box-sizing: border-box;
+
+}
+  
+  *,* ::before, *::after {
+    box-sizing: border-box;
+    
+  }
+
+body {
+      font-family: 'helvetica','sans-serif';
+      margin: 0;
+      overflow-x: hidden;
+      padding: 0;
+     
+  
+   /* */
+}
+
+  h1, h2, h3, h4, h5{
+      line-height: 1.5;
+      font-weight: 300;
+      margin: 0.5em 0;
+
+}
+
+h1{
+      font-size: 2.5em;
+}
+h2{
+      font-size: 2em;
+      text-align: center;
+}
+h3{
+      font-size: 1.6em;
+}
+h4{
+      font-size:1.4em;
+}
+h5{
+      font-size:1.2em;
+      
+}
+a{
+      text-decoration: none;
+}
+p,label,strong{
+      line-height: 2;
+      font-size: 0.85em;
+      font-weight: 300;
+  }
+.flex{
+      display:flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      justify-content: space-between; 
+      overflow-y:scroll;
+      
+}
+
+header{
+    background: linear-gradient(to bottom, rgba(170, 201, 231, 0.52), rgba(73, 159, 194, 0.73));
+    padding: 20px 0;
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid #FF8320;
+    z-index: 4;
+
+}
+.splash-container {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vh;
+ 
+}
+
+.splash-title {
+  font-family: 'Bangers', cursive;
+  font-size: 7rem;
+}
+
+
+.btn {
+  font-size: inherit;
+  background-color: hsl(30, 100%, 50%);
+  padding: .5em 1em;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: .2em;
+  color: #333;
+}
+
+.btn:hover, .btn:focus {
+  background-color: hsl(30, 100%, 40%);
+}
+
+.splash-btn {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.splash-btn:first-child {
+  margin-left: 0;
+}
+
+.choices{
+  position: absolute;
+  top: 65%;
+}
+
+  /*table styles*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: auto;
+    border-spacing: 0px;
+    border-collapse: initial;
+    position: absolute;
+
+}
+
+.hamburger-menu{
+    background-color: transparent;
+    border: 1px solid #FF8320;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display:none;
+}
+.hamburger-menu .strip{
+    display: block;
+    height: 1px;
+    background-color: #FF8320;
+    margin: 4px 0;
+    
+}
+
+nav ul{
+    list-style:none;
+    padding: 0;
+    margin: 20px;
+    position: absolute;
+    left: 40%;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 50px;
+}
+
+nav ul li a{
+    color: #eee;
+    font-weight: 600;
+
+}
+
+nav ul li a:hover{
+    color: #ff8320;
+}
+
+.logo p{ 
+    height: 30%;
+   font-weight: bold;
+   font-size: 4em;
+   position: absolute;
+   bottom: 5%;
+  
+}
+
+
+#car-picture{
+  height: 700px;
+
+}
+
+.animation-wrapper{
+	background: #ace5ee;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.water{
+    bottom: 0;
+    left: 0;
+	position: absolute;
+    width: 100%;
+}
+
+.water ul.waves{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.water ul.waves li{
+	background-repeat: repeat-x;
+}
+
+.water ul.waves li.wave-one{
+	animation: wave 8.7s linear infinite;
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	bottom: 0px;
+	height: 50px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 10;
+}
+
+.water ul.waves li.wave-two{
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	animation: wave 10s linear infinite;
+	bottom: 0px;
+	height: 84px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+}
+
+.water ul.waves li.wave-three{
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	animation: wave 25s linear infinite;
+	bottom: 0;
+	height: 190px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 8;
+}
+
+.water ul.waves li.wave-four{
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	animation: wave 25s linear infinite;
+	bottom: 0;
+	height: 205px;
+	left: 0;
+	position: absolute;
+	right: 0;
+}
+
+.boat{
+	animation: boat 3s linear infinite;
+    background-repeat: no-repeat;
+    bottom: 175px;
+    height: 145px;
+    left: 50%;
+	position: absolute;
+    width: 250px;
+}
+
+.cloud{
+	animation: cloud 30s linear infinite;
+	background-repeat: no-repeat;
+    height: 165px;
+    left: 0;
+    position: absolute;
+    width: 297px
+}
+
+.cloud2{
+	animation: cloud 25s linear infinite;
+	background-repeat: no-repeat;
+    bottom: 320px;
+    height: 165px;
+    left: 140px;
+    position: absolute;
+    width: 297px;
+}
+
+.dolphin{
+	animation: fish 15s linear infinite;
+	background-repeat: no-repeat;
+	bottom: 45px;
+	height: 80px;
+	left: 20%;
+	position: absolute;
+	width: 124px;
+	z-index: 9;
+}
+
+/*Animation Keyframe Section*/
+
+@keyframes wave{
+    0% {
+        background-position: 0 0;
+	}
+
+    100% {
+        background-position: 1920px 0;
+    }
+}
+
+@keyframes boat{
+	0%{
+		transform: rotate(0);
+	}
+
+	50%{
+		transform: rotate(-3deg);
+	}
+
+	100%{
+		transform: rotate(0);
+	}
+}
+
+@keyframes cloud{
+	0%{
+		left: -30%;
+	}
+
+	100%{
+		left: 100%;
+	}
+}
+
+
+#posts-comments{
+    background: url("pics/bluewater.jpg") no-repeat;
+    background-size: cover;
+    padding: 75px 0;
+    overflow-y:scroll;
+    
+}
+
+h2 .shortText{
+  position: absolute;
+  bottom: 10%;
+}
+
+
+
+#posts-comments .posts-comments-box{
+    flex-basis: 28%;
+    background-color: #252525;
+    padding: 20px 20px 25px;
+    border: 1px solid #4a4a4a;
+}
+
+#posts-comments .posts-comments-box h3{
+    color: #eee;
+
+}
+
+.post-item{
+    margin-top: 25px;
+}
+
+.post-item:first-child{
+    margin-top: 0;
+
+}
+
+.post-item:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.post-item img{
+    float: left;
+    width: 30%;
+}
+
+.post-item > div{
+    float: left;
+    margin-left: 5%;
+    width: 65%;
+}
+
+.post-item > div h5{
+    color: #FF8320;
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+.post-item > div p{
+    color: #eee;
+    margin: 5px 0;
+    font-size: 00.8em;
+}
+
+.post-item > div small{
+    color: #999;
+    font-size: 0.75em;
+}
+.comments-item{
+    margin-top: 1em;
+}
+
+.comments-item:first-child{
+    margin-top:0;
+}
+
+.comments-item::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.comments-item img{
+    width: 23%;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+}
+
+.comments-item > div{
+    float: left;
+    margin-left: 7%;
+    width: 70%
+}
+
+.comments-item > div p{
+    color: #eee;
+    font-size: 00.8em;
+    margin: 0 0 5px;
+}
+
+.comments-item > div p span{
+    color: #999;
+
+}
+.comments-item >div p span.authot{
+    color: #E92159;
+}
+
+.comments-item > div h5{
+    color: #FF8320;
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+footer{
+    background-color: #252525;
+    padding: 25px 0 20px;
+    overflow-y:scroll;
+   
+}
+
+footer small .footer-heart{
+    font-size: 16px;
+    color: #ddd;
+}
+footer small p{
+    color: #ddd;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    
+
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer ul li a{
+    color: #ddd;
+    font-size: 0.8em;
+}
+
+/*Styles for battleship*/
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 66vh;
+  }
+  
+  .splash-title {
+    font-family: 'Bangers', cursive;
+    font-size: 10rem;
+  }
+  
+  .btn {
+    font-size: inherit;
+    background-color: hsl(30, 100%, 50%);
+    padding: .5em 1em;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: .2em;
+    color: #333;
+  }
+  
+  .btn:hover, .btn:focus {
+    background-color: hsl(30, 100%, 40%);
+  }
+  
+  .splash-btn {
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+  
+  .splash-btn:first-child {
+    margin-left: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 14;
+   
+  }
+  #players{
+    position: absolute;
+    left: 35%;
+    top: 20%;
+  }
+
+  .battleship-grid {
+    margin: 2vmin;
+    display: grid;
+    background-color: hsl(200, 100%, 50%);
+    grid-template-rows: repeat(10, 4.6vmin);
+    grid-template-columns: repeat(10, 4.6vmin);
+  }
+  
+  .grid-computer > .taken,
+  .grid-computer > .boom {
+    background-color: hsl(200, 100%, 50%) !important;
+    border-radius: 0 !important;
+  }
+  
+  .taken,
+  .ship {
+    position: relative;
+    background-color: hsl(0, 0%, 80%);
+  }
+  
+  .taken.start.vertical,
+  .taken.start.vertical::before {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  
+  .taken.end.vertical,
+  .taken.end.vertical::before {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .taken.start.horizontal,
+  .taken.start.horizontal::before {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  
+  .taken.end.horizontal,
+  .taken.end.horizontal::before {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .taken.vertical::before,
+  .taken.horizontal::before {
+    content: '';
+    position: absolute;
+    border: .3vmin solid white;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+  }
+  
+  .taken.horizontal::before {
+    animation: ripplesY 3s linear infinite;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .taken.vertical::before {
+    animation: ripplesX 3s linear infinite;
+    border-top: none;
+    border-bottom: none;
+  }
+  
+  @keyframes ripplesX {
+    0% {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      opacity: 0;
+      transform: scaleX(1.5);
+    }
+  }
+  
+  @keyframes ripplesY {
+    0% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  
+    100% {
+      opacity: 0;
+      transform: scaleY(1.5);
+    }
+  }
+  
+  .grid-display {
+    display: flex;
+  }
+  
+  .ship > div {
+    width: 4.6vmin;
+    height: 4.6vmin;
+  }
+  
+  .ship {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vmin;
+    width: calc(4.6vmin * var(--width, 1));
+    height: calc(4.6vmin * var(--height, 1));
+    border-radius: 2.3vmin;
+  }
+  
+  .battleship-grid div {
+    border: 1px solid hsla(0, 0%, 100%, .2);
+  }
+  
+  .destroyer-container {
+    --width: 2;
+  }
+  
+  .destroyer-container-vertical {
+    --height: 2;
+    --width: 1;
+  }
+  
+  .submarine-container,
+  .cruiser-container {
+    --width: 3;
+  }
+  
+  .submarine-container-vertical,
+  .cruiser-container-vertical {
+    --height: 3;
+    --width: 1;
+  }
+  
+  .battleship-container {
+    --width: 4;
+  }
+  
+  .battleship-container-vertical {
+    --height: 4;
+    --width: 1;
+  }
+  
+  .carrier-container {
+    --width: 5;
+  }
+  
+  .carrier-container-vertical {
+    --height: 5;
+    --width: 1;
+  }
+  
+  .hidden-info {
+    font-size: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .info-text {
+    margin: 1rem;
+  }
+  
+  .miss,
+  .boom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .boom::after,
+  .miss::after {
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    width: 2vmin;
+    height: 2vmin;
+  }
+  
+  .miss::after {
+    background-color: white;
+  }
+  
+  .boom::after {
+    background-color: red;
+  }
+  
+  .miss::before {
+    content: '';
+    position: absolute;
+    animation: hit .2s ease-out forwards;
+    border: 1vmin solid white;
+    border-radius: 100%;
+    width: 2vmin;
+    height: 2vmin;
+  }
+  
+  .boom {
+    animation: boom .2s ease-out forwards;
+  }
+  
+  @keyframes hit {
+    0% {
+      opacity: 1;
+      transform: scale(0);
+    }
+  
+    100% {
+      opacity: 0;
+      transform: scale(4);
+    }
+  }
+  
+  @keyframes boom {
+    0% {
+      background-color: red;
+    }
+  
+    100% {
+      background-color: hsl(0, 0%, 80%);
+    }
+  }
+  
+  .player {
+    margin: 2vmin;
+  }
+  
+  .connected, .ready {
+    font-weight: normal;
+    opacity: .25;
+    text-decoration: line-through;
+  }
+  
+  .connected.active,
+  .ready.active {
+    opacity: 1;
+    text-decoration: none;
+  }
+
+
