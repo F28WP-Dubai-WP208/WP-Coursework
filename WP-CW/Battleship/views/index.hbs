@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="/style.css" media="all" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap" rel="stylesheet">
+    
+
+    <title>Battleship Game</title>
+</head>
+<section id = "car-picture"> 
+        
+        <div class="animation-wrapper">
+		<div class="water">
+			<ul class="waves">
+				<li class="wave-one" style="background-image: url('https://i.postimg.cc/7LtCC11Y/wave1.png');"></li>
+				<li class="wave-two" style="background-image: url('https://i.postimg.cc/P5hv05rh/wave2.png');"></li>
+				<li class="wave-three" style="background-image: url('https://i.postimg.cc/63Dyc91k/wave3.png');"></li>
+				<li class="wave-four" style="background-image: url('https://i.postimg.cc/1tg8DgM0/wave4.png');"></li>
+			</ul>
+		</div>
+		<div class="boat" style="background-image: url('https://i.postimg.cc/GmQTRnHD/boat2.png');"></div>
+		<div class="cloud" style="background-image: url('https://i.postimg.cc/VNkrLZCV/cloud-md.png');"></div>
+		<div class="cloud2" style="background-image: url('https://i.postimg.cc/VNkrLZCV/cloud-md.png');"></div>
+	</div>
+<header>
+    <div class = "flex">
+        <div class = "logo">
+            <p class="splash-title">Battleship</p>
+
+        </div>
+        <nav>
+            <button id="nav-toggle" class="hamburger-menu">
+                <span class="strip"></span>
+                <span class="strip"></span>
+                <span class="strip"></span>
+            </button>
+            <ul id="nav-menu-continer">
+                <li><a href="/">Home</a></li>
+                {{#if user}}
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/auth/logout">Logout</a></li>
+                {{else}}
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                {{/if}}
+                <li><a href="/contact">Contact</a></li>
+
+
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<body>
+    <main>
+    
+    
+    </section>
+        <div class="splash-container">
+      <h1 class="splash-title"><span>Battleship</span></h1>
+      <div class="choices">
+          <h2>  Sink the enemy ships before they sink you!(Drag to place.)
+
+          </h2>
+        <a href="/singleplayer" class="btn splash-btn">Single Player</a>
+        <a href="/multiplayer" class="btn splash-btn">Multiplayer</a>
+      </div>
+      </div>
+    </div>
+
+
+        </div>
+       
+</body>
+
+
+<section id="posts-comments">
+    <div class="flex">
+
+            <h2 class="shortText">Bringing back your favorite retro classic!</h2>
+
+       
+        <div class="posts-comments-box">
+            <h3>Latest Posts</h3>
+            <div class="post-item">
+                <img src="pics/pp1.jpg" />
+                <div>
+                    <h5>June 21, 2019</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor velit eget nisi porttitor maximus. </p>
+                    <small>By: Admin</small>
+                </div>
+            </div>
+
+            <div class="post-item">
+                <img src="pics/pp2.jpg"/>
+                <div>
+                    <h5>June 21, 2019</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor velit eget nisi porttitor maximus. </p>
+                    <small>By: Admin</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="posts-comments-box">
+            <h3>Top Comments</h3>
+            <div class="comments-item">
+                <img src="pics/pp4.jpg"/>
+                <div>
+                    <p><span class="author">Jane Doe</span><span>on</span>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <h5> June 21,2019</h5>
+                
+                </div>
+            </div>
+
+            <div class="comments-item">
+                <img src="pics/pp5.jpg"/>
+                <div>
+                    <p><span class="author">Jane Doe</span><span>on</span>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <h5> June 21,2019</h5>
+                
+                </div>  
+            </div>
+
+            <div class="comments-item">
+                <img src="pics/pp6.jpg"/>
+                <div>
+                    <p><span class="author">Jane Doe</span><span>on</span>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <h5> June 21,2019</h5>
+                
+                </div>   
+            </div>
+
+            <div class="comments-item">
+                <img src="pics/pp7.jpg"/>
+                <div>
+                    <p><span class="author">Jane Doe</span><span>on</span>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <h5> June 21,2019</h5>
+                
+                </div>  
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</section>
+</main>
+<footer>
+    <div class="flex">
+        <small><p>Copyright &copy; 2020 All rights reserved | This template is made with <span class = "footer-heart">&#9829;</span>by WP-208.</p></small>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#">Blog</a>
+            </li>
+
+            <li>
+                <a href="#">Forum</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+    </div>
+</footer>
+
+
+</html>
