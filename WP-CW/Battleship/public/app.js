@@ -1,3 +1,24 @@
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+function myFunction1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+var closebtns = document.getElementsByClassName("close");
+var i;
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const userGrid = document.querySelector('.grid-user')
   const computerGrid = document.querySelector('.grid-computer')
