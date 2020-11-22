@@ -51,6 +51,14 @@ exports.login = async (req, res) => {
   } catch (error) {
     console.log(error);
   }
+  app.use(function(req, res, next) {
+    if (req.session.user == null){
+  // if user is not logged-in redirect back to login page //
+        res.redirect('/login');
+    }   else{
+        next();
+    }
+  });
 }
 
 exports.register = (req, res) => {

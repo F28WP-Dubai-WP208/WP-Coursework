@@ -42,7 +42,20 @@
 </header>
   <body>
     <div class="container" id="players">
-      <div class="player p1">
+       {{#if user}}
+                    <div class="player p1">
+       {{user.name}}
+        <div class="connected">Connected</div>
+        <div class="ready">Ready</div>
+      </div>
+      
+      <div class="player p2">
+       {{user.name}}
+        <div class="connected">Connected</div>
+        <div class="ready">Ready</div>
+      </div>
+                {{else}}
+                <div class="player p1">
         Player 1
         <div class="connected">Connected</div>
         <div class="ready">Ready</div>
@@ -53,6 +66,7 @@
         <div class="connected">Connected</div>
         <div class="ready">Ready</div>
       </div>
+                {{/if}}
     </div>
 
     <div class="container">
@@ -68,6 +82,8 @@
       <h3 id="whose-go" class="info-text">Your Go</h3>
       <h3 id="info" class="info-text"></h3>
     </div>
+  </div>
+  
 
     <div class="container">
       <div class="grid-display">
@@ -78,5 +94,30 @@
         <div class="ship carrier-container" draggable="true"><div id="carrier-0"></div><div id="carrier-1"></div><div id="carrier-2"></div><div id="carrier-3"></div><div id="carrier-4"></div></div>
       </div>
     </div>
+      <div class="popup" onclick="myFunction()">Rules
+        <span class="popuptext" id="myPopup">
+          Two players challenge each other by using a 10×10 grid in virtual Battleship. 
+          The player who destroys the totality of their opponent’s fleet wins the game.
+           After the ships are randomly positioned, each opponent fire upon squares in the 
+           adverse grid and tries to sink their enemies fleet in turns. </span>
+      </div>
+      <div class="popup1" onclick="myFunction1()">Tactics
+        <span class="popuptext1" id="myPopup1">
+          <ul class="a">
+             Maximizing your chances of hit
+              <p>Shooting at the center of the grid maximizes your chances of hitting a ship. 
+               Separating the grid into even and odd squares, and targeting only one type also reduces the number 
+               of turns for a hit. </p>
+          </ul>
+
+          <ul class="b">
+            Targeting effectively
+             <p>Once you have a hit, target around the area. If you miss, target the 
+               opposite square. When the first ship is sunk, repeat the strategy of aiming towards the center 
+               of the grid, you may be able to reduce what other ships are left!</p>
+          </ul>
+
+        </span>
+      </div>
   </body>
 </html>
