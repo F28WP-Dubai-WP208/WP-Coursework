@@ -3,9 +3,9 @@
 
 Game Name : Battleshiip
 
-Game Scenario : Battleship game
-2 Game modes : Single Player/Multiplayer
-5 Ship models
+Game Scenario : Battleship game,
+2 Game modes : Single Player/Multiplayer,
+5 Ship models,
 2 Grids
 
 =======
