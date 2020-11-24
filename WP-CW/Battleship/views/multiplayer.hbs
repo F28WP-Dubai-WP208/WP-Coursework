@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Battle Ships</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/bstyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap" rel="stylesheet">
     <script>
       let gameMode = 'multiPlayer'
@@ -11,6 +11,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script src="/app.js" charset="utf-8"></script>
   </head>
+  <div class="animation-wrapper"></div>
 <header>
     <div class = "flex">
         <div class = "logo">
@@ -25,13 +26,6 @@
             </button>
             <ul id="nav-menu-continer">
                 <li><a href="/">Home</a></li>
-                {{#if user}}
-                    <li><a href="/profile">Profile</a></li>
-                    <li><a href="/auth/logout">Logout</a></li>
-                {{else}}
-                <li><a href="/login">Login</a></li>
-                <li><a href="/register">Register</a></li>
-                {{/if}}
                 <li><a href="/contact">Contact</a></li>
 
 
@@ -79,11 +73,13 @@
         <button id="start" class="btn">Start Game</button>
         <button id="rotate" class="btn">Rotate Your Ships</button>
       </div>
-      <h3 id="whose-go" class="info-text">Your Go</h3>
+      <h3 id="whose-go" class="info-text">Your Turn</h3>
       <h3 id="info" class="info-text"></h3>
     </div>
   </div>
-  
+  <div class="starting-info">
+      <h2>Please drag all your ships into this box before clicking "Start Game"(use other box to sink opponent's ships)!</h2>
+    </div>
 
     <div class="container">
       <div class="grid-display">
@@ -116,6 +112,7 @@
                opposite square. When the first ship is sunk, repeat the strategy of aiming towards the center 
                of the grid, you may be able to reduce what other ships are left!</p>
           </ul>
+
 
         </span>
       </div>

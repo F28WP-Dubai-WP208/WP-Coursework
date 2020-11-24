@@ -8,6 +8,7 @@ function myFunction1() {
   popup.classList.toggle("show");
 }
 
+
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
@@ -17,6 +18,13 @@ var i;
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
+}
+function myFunction() {
+  var popup = document.getElementById("Text");
+  popup.classList.toggle("show");
+}
+function openText() {
+  document.getElementById("Text").style.display = "block";
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -341,10 +349,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(enemyReady) {
       if(currentPlayer === 'user') {
-        turnDisplay.innerHTML = 'Your Go'
+        turnDisplay.innerHTML = 'Your Turn'
       }
       if(currentPlayer === 'enemy') {
-        turnDisplay.innerHTML = "Enemy's Go"
+        turnDisplay.innerHTML = "Enemy's Turn"
       }
     }
   }
@@ -358,14 +366,14 @@ document.addEventListener('DOMContentLoaded', () => {
   function playGameSingle() {
     if (isGameOver) return
     if (currentPlayer === 'user') {
-      turnDisplay.innerHTML = 'Your Go'
+      turnDisplay.innerHTML = 'Your Turn'
       computerSquares.forEach(square => square.addEventListener('click', function(e) {
         shotFired = square.dataset.id
         revealSquare(square.classList)
       }))
     }
     if (currentPlayer === 'enemy') {
-      turnDisplay.innerHTML = 'Computers Go'
+      turnDisplay.innerHTML = "Computer's Turn "
       setTimeout(enemyGo, 1000)
     }
   }
@@ -416,7 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
       checkForWins()
     } else if (gameMode === 'singlePlayer') enemyGo()
     currentPlayer = 'user'
-    turnDisplay.innerHTML = 'Your Go'
+    turnDisplay.innerHTML = 'Your Turn'
   }
 
   function checkForWins() {

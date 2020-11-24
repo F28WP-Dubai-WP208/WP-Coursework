@@ -6,6 +6,7 @@ const dotenv = require('dotenv')
 const cookieParser = require('cookie-parser')
 const PORT = process.env.PORT || 2000
 const socketio = require('socket.io')
+const bodyParser = require('body-parser')
 const app = express();
 const server = http.createServer(app)
 const io = socketio(server)
@@ -127,6 +128,7 @@ app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/auth'));
 app.use('/singleplayer',require('./routes/pages'));
 app.use('/multiplayer',require('./routes/pages'));
+app.use('/contact',require('./routes/pages'));
 
 
 

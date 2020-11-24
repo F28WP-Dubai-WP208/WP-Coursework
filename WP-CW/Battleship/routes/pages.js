@@ -35,6 +35,9 @@ router.get('/profile', authController.isLoggedIn, (req, res) => {
   }
   
 });
+router.get('/contact', (req, res) => {
+  res.render('contact');
+});
 
 
 
