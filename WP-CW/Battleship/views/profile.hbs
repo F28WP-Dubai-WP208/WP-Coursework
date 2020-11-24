@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap" rel="stylesheet">
+
   <title>Profile</title>
 </head>
 <body>
 <header>
     <div class = "flex">
         <div class = "logo">
-            <a href = "#"><img src="/pics/logo.jpg" width="150" height="60"  alt="CarGame Logo"/>
-
+            <p class="splash-title">Battleship</p>
         </div>
         <nav>
             <button id="nav-toggle" class="hamburger-menu">
@@ -31,6 +32,19 @@
         
     </div>
 </header>
+<div class="animation-wrapper">
+		<div class="water">
+			<ul class="waves">
+				<li class="wave-one" style="background-image: url('https://i.postimg.cc/7LtCC11Y/wave1.png');"></li>
+				<li class="wave-two" style="background-image: url('https://i.postimg.cc/P5hv05rh/wave2.png');"></li>
+				<li class="wave-three" style="background-image: url('https://i.postimg.cc/63Dyc91k/wave3.png');"></li>
+				<li class="wave-four" style="background-image: url('https://i.postimg.cc/1tg8DgM0/wave4.png');"></li>
+			</ul>
+		</div>
+		<div class="boat" style="background-image: url('https://i.postimg.cc/GmQTRnHD/boat2.png');"></div>
+		<div class="cloud" style="background-image: url('https://i.postimg.cc/VNkrLZCV/cloud-md.png');"></div>
+		<div class="cloud2" style="background-image: url('https://i.postimg.cc/VNkrLZCV/cloud-md.png');"></div>
+	</div>
 <section id = "car-picture">
   <div class="container">
     <div class="row">
@@ -41,7 +55,8 @@
           </div>
           <div class="card-body">
             <h5 class="card-title">{{user.name}}</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">
+              The First on every game, the unsank, breaker of Highscores.</p>
             <a href="#" class="btn btn-primary">{{user.email}}</a>
           </div>
         </div>
@@ -50,15 +65,13 @@
       <div class="col2">
         <div class="card-text">
           <div class="card-header">
-            Profile Page
+            Welcome!
           </div>
           <div class="card-body">
             <h5 class="card-title">Hey {{user.name}} welcome back</h5>
-            <p class="card-text">This is your profile page where you can add all the information about yourself</p>
-            <a href="#" class="btn">Go Somewhere</a>
-          </div>
-          <div class="card-footer">
-            Streetscapes - Project
+            <p class="card-text">We hope you like our website and are enjoying the game availabe! 
+              If you have any doubts please contact us <a href="/contact">here.</a></p>
+            <a href="/" class="btn-home">Go Home</a>
           </div>
         </div>
       </div>
