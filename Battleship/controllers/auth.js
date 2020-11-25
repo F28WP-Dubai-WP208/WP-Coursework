@@ -24,7 +24,7 @@ db.connect(function(err) {
   return;
    }
    });
-  //create table Payers
+ 
   const sqlUser = "Create table if not exists `gamelogin`.`users`(`id` int(50) NOT NULL auto_increment,`name` varchar(50) NOT NULL,`email` varchar(50) NOT NULL,`password` varchar(100) NOT NULL,PRIMARY KEY (`id`)); ";
   db.query(sqlUser, function(err, result) {
   if (err) throw err;
@@ -34,20 +34,22 @@ db.connect(function(err) {
 
    exports.login = async (req, res) => {
     try {
-      const { email, password } = req.body;
+      console.log("email working",req.body);
+      const email = req.body.email;
+      const password = req.body.password;
   
       if( !email || !password ) {
         return res.status(400).render('login', {
           message: 'Please provide an email and password'
-        })
-      }
+        });
+      };
   
       db.query('SELECT * FROM users WHERE email = ?', [email], async (error, results) => {
-        console.log(results);
-        if( !results || !(await bcrypt.compare(password, results[0].password)) ) {
+        console.log(results,password, error);
+        if( !results || results.length == 0  || !(await bcrypt.compare(password, results[0].password)) ) {
           res.status(401).render('login', {
             message: 'Email or Password is incorrect'
-          })
+          });
         } else {
           const id = results[0].id;
   
@@ -73,14 +75,6 @@ db.connect(function(err) {
     } catch (error) {
       console.log(error);
     }
-    app.use(function(req, res, next) {
-      if (req.session.user == null){
-    // if user is not logged-in redirect back to login page //
-          res.redirect('/login');
-      }   else{
-          next();
-      }
-    });
   }
 
 

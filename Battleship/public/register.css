@@ -400,6 +400,19 @@ form, .content {
     top: 20%;
     left: 30%;
 }
+.alert1{
+	width: 60%;
+	margin: 0px auto 0px;
+	color: white;
+	background-color: rgba(255,99,71, 0.6);
+	text-align: center;
+	border: 1px solid #B0C4DE;
+	border-radius: 20px 20px 20px 20px;
+	padding: 20px;
+    position: absolute;
+    top: -90%;
+    left: 20%;
+}
 .col1{
 	width: 15%;
 	height: 50%;
