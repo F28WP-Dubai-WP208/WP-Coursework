@@ -1,0 +1,392 @@
+html {
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+  
+  *,* ::before, *::after {
+    box-sizing: border-box;
+    
+    
+  }
+
+body {
+      font-family: 'helvetica','sans-serif';
+      margin: 0;
+      padding: 0;
+     
+  
+   /* */
+}
+
+  h1, h2, h3, h4, h5{
+      line-height: 1.5;
+      font-weight: 300;
+      margin: 0.5em 0;
+
+}
+
+h1{
+      font-size: 2.5em;
+}
+h2{
+      font-size: 2em;
+      text-align: center;
+}
+h3{
+      font-size: 1.6em;
+}
+h4{
+      font-size:1.4em;
+}
+h5{
+      font-size:1.2em;
+      
+}
+a{
+      text-decoration: none;
+}
+p,label,strong{
+      line-height: 2;
+      font-size: 0.85em;
+      font-weight: 300;
+  }
+.flex{
+      display:flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      justify-content: space-between; 
+      overflow-y:scroll;
+      
+}
+
+header{
+    background: linear-gradient(to bottom, rgba(170, 201, 231, 0.52), rgba(73, 159, 194, 0.73));
+    padding: 20px 0;
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid #FF8320;
+    z-index: 4;
+
+}
+.splash-container {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 700px;
+ 
+}
+
+.splash-title {
+  font-family: 'Bangers', cursive;
+  font-size: 7rem;
+}
+
+
+.btn {
+  font-size: inherit;
+  background-color: hsl(30, 100%, 50%);
+  padding: .5em 1em;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: .2em;
+  color: #333;
+}
+
+.btn:hover, .btn:focus {
+  background-color: hsl(30, 100%, 40%);
+}
+
+.splash-btn {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.splash-btn:first-child {
+  margin-left: 0;
+}
+
+.choices{
+  position: absolute;
+  top: 65%;
+  z-index: 11;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  top: -90%;
+  left: -8%;
+  width: 700px;
+  height: 400px;
+  border: 3px solid #f1f1f1;
+  z-index: 15;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 1000px;
+  padding: 67px;
+  background: linear-gradient(to bottom, rgba(170, 201, 231), rgba(73, 159, 194,0.9));
+
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #e4714e;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {background: #bbb;}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+  /*table styles*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: auto;
+    border-spacing: 0px;
+    border-collapse: initial;
+    position: absolute;
+
+}
+
+.hamburger-menu{
+    background-color: transparent;
+    border: 1px solid #FF8320;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display:none;
+}
+.hamburger-menu .strip{
+    display: block;
+    height: 1px;
+    background-color: #FF8320;
+    margin: 4px 0;
+    
+}
+
+nav ul{
+    list-style:none;
+    padding: 0;
+    margin: 20px;
+    position: absolute;
+    left: 40%;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 50px;
+}
+
+nav ul li a{
+    color: #eee;
+    font-weight: 600;
+
+}
+
+nav ul li a:hover{
+    color: #ff8320;
+}
+
+.logo p{ 
+    height: 30%;
+   font-weight: bold;
+   font-size: 4em;
+   position: absolute;
+   bottom: 5%;
+  
+}
+
+.animation-wrapper{
+	background: #ace5ee;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.water{
+    bottom: 0;
+    left: 0;
+	position: absolute;
+    width: 100%;
+}
+
+.water ul.waves{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.water ul.waves li{
+	background-repeat: repeat-x;
+}
+
+.water ul.waves li.wave-one{
+	animation: wave 8.7s linear infinite;
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	bottom: 0px;
+	height: 50px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 10;
+}
+
+.water ul.waves li.wave-two{
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	animation: wave 10s linear infinite;
+	bottom: 0px;
+	height: 84px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+}
+
+.water ul.waves li.wave-three{
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	animation: wave 25s linear infinite;
+	bottom: 0;
+	height: 190px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 8;
+}
+
+.water ul.waves li.wave-four{
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	animation: wave 25s linear infinite;
+	bottom: 0;
+	height: 205px;
+	left: 0;
+	position: absolute;
+	right: 0;
+}
+
+.boat{
+	animation: boat 3s linear infinite;
+    background-repeat: no-repeat;
+    bottom: 175px;
+    height: 145px;
+    left: 50%;
+	position: absolute;
+    width: 250px;
+}
+
+.cloud{
+	animation: cloud 22s linear infinite;
+	background-repeat: no-repeat;
+  height: 165px;
+  left: 120px;
+  position: absolute;
+  width: 297px;
+}
+
+.cloud2{
+	animation: cloud 18s linear infinite;
+	background-repeat: no-repeat;
+    bottom: 320px;
+    height: 165px;
+    left: 120px;
+    position: absolute;
+    width: 297px;
+}
+
+/*Animation Keyframe Section*/
+
+@keyframes wave{
+    0% {
+        background-position: 0 0;
+	}
+
+    100% {
+        background-position: 1920px 0;
+    }
+}
+
+@keyframes boat{
+	0%{
+		transform: rotate(0);
+	}
+
+	50%{
+		transform: rotate(-3deg);
+	}
+
+	100%{
+		transform: rotate(0);
+	}
+}
+
+@keyframes cloud{
+	0%{
+		left: -30%;
+	}
+
+	100%{
+		left: 100%;
+	}
+}
+
+.footer1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #252525;
+  padding: 6px 0 5px;
+  z-index: 20;
+}
+
+
+footer small .footer-heart{
+    font-size: 16px;
+    color: #ddd;
+    z-index: 30;
+}
+footer small p{
+    color: #ddd;
+    z-index: 30;
+}

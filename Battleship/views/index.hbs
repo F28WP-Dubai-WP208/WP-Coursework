@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="/style.css" media="all" />
+    <script src="/app.js" charset="utf-8"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap" rel="stylesheet">
+    
+
+    <title>Battleship Game</title>
+</head>
+        
+        <div class="animation-wrapper">
+		<div class="water">
+			<ul class="waves">
+				<li class="wave-one" style="background-image: url('https://i.postimg.cc/7LtCC11Y/wave1.png');"></li>
+				<li class="wave-two" style="background-image: url('https://i.postimg.cc/P5hv05rh/wave2.png');"></li>
+				<li class="wave-three" style="background-image: url('https://i.postimg.cc/63Dyc91k/wave3.png');"></li>
+				<li class="wave-four" style="background-image: url('https://i.postimg.cc/1tg8DgM0/wave4.png');"></li>
+			</ul>
+		</div>
+		<div class="boat" style="background-image: url('https://i.postimg.cc/GmQTRnHD/boat2.png');"></div>
+		<div class="cloud" style="background-image: url('https://i.postimg.cc/VNkrLZCV/cloud-md.png');"></div>
+		<div class="cloud2" style="background-image: url('https://i.postimg.cc/VNkrLZCV/cloud-md.png');"></div>
+	</div>
+<header>
+    <div class = "flex">
+        <div class = "logo">
+            <p class="splash-title">Battleship</p>
+
+        </div>
+        <nav>
+            <button id="nav-toggle" class="hamburger-menu">
+                <span class="strip"></span>
+                <span class="strip"></span>
+                <span class="strip"></span>
+            </button>
+            <ul id="nav-menu-continer">
+                <li><a href="/">Home</a></li>
+                {{#if user}}
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/auth/logout">Logout</a></li>
+                {{else}}
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                {{/if}}
+                <li><a href="/contact">Contact</a></li>
+
+
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<body>
+    <main>
+        <div class="splash-container">
+      <h1 class="splash-title"><span>Battleship</span></h1>
+      <div class="choices">
+          <h2>  Sink the enemy ships before they sink you!
+
+          </h2>
+        <a href="/singleplayer" class="btn splash-btn">Single Player</a> 
+        {{#if user}}
+                    <a href="/multiplayer" class="btn splash-btn">Multiplayer</a>
+                {{else}}
+                   <button class="btn splash-btn" onclick="openForm()">Multiplayer</button>
+                   <div class="form-popup" id="myForm">
+                       <form class="form-container">
+                           <h1>Login before continuing with multiplayer!</h1>
+                              <h5>You can play single player if you choose not to login/register</h5>
+                            <a href="/login">
+                           <button type="button" class="btn">
+                              Login 
+                               </button>
+                            </a>
+                               <span class="close" onclick="closeForm()">x</span>
+                           </form>
+                           </div>
+         {{/if}}
+      </div>
+      </div>
+       
+</body>
+</main>
+<footer>
+    <div class="footer1">
+        <small><p>Copyright &copy; 2020 All rights reserved | This template is made with <span class = "footer-heart">&#9829;</span>by WP-208.</p></small>
+    </div>
+</footer>
+</html>

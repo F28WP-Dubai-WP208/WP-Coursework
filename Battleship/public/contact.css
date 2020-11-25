@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: url('https://i.imgur.com/kk76J5I.jpg') no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+.flex{
+	display:flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	justify-content: space-between; 
+	
+  }
+header{
+	background: linear-gradient(to bottom, rgba(170, 201, 231, 0.52), rgba(73, 159, 194, 0.73));
+	padding: 20px 0;
+	height: 70px;
+	position: relative;
+	border-bottom: 1px solid #FF8320;
+	z-index: 4;
+	
+	}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: auto;
+	border-spacing: 0px;
+	border-collapse: initial;
+	position: absolute;
+  
+  }
+  
+  .hamburger-menu{
+	background-color: transparent;
+	border: 1px solid #FF8320;
+	padding: 3px 5px;
+	width: 30px;
+	cursor: pointer;
+	display:none;
+  }
+  .hamburger-menu .strip{
+	display: block;
+	height: 1px;
+	background-color: #FF8320;
+	margin: 4px 0;
+	
+  }
+  
+  nav ul{
+	list-style:none;
+	padding: 0;
+	margin: 20px;
+	position: absolute;
+	left: 40%;
+  }
+  
+  nav ul li{
+	display: inline-block;
+	font-size: 1em;
+	margin: 0 50px;
+  }
+  
+  nav ul li a{
+	color: #eee;
+	font-weight: 600;
+  
+  }
+  
+  nav ul li a:hover{
+	color: #ff8320;
+  }
+  
+  .logo p{ 
+	height: 5%;
+   font-weight: bold;
+   font-size: 3.4em;
+   font-family: 'Bangers', cursive;
+  
+  }
+
+
+
+#nav-menu-continer span{
+    color:#FF8320; 
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.wrapper .title h1{
+  color: #c5ecfd;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form{
+  display: flex;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+  width: 50%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c5ecfd;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c5ecfd;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c5ecfd;
+}
+
+.btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  top: -30%;
+  left: 5%;
+  width: 400px;
+  height: 80px;
+  width: 92%;
+	border: 1px solid #a94442;
+	color: #a94442;
+	background: #f2dede;
+	border-radius: 20px;
+	text-align: center;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 1000px;
+  padding: 25px;
+  background: #f2dede;
+  border-radius: 20px;
+
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}

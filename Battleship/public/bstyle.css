@@ -1,0 +1,565 @@
+html {
+  box-sizing: border-box;
+
+}
+
+*,* ::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'helvetica','sans-serif';
+    margin: 0;
+  
+    padding: 0;
+   
+
+ /* */
+}
+
+
+h1, h2, h3, h4, h5{
+  line-height: 1.5;
+  font-weight: 300;
+  margin: 0.5em 0;
+
+}
+
+h1{
+  font-size: 2.5em;
+}
+h2{
+  font-size: 1.7em;
+  text-align: center;
+}
+.animation-wrapper{
+	background: #ace5ee;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+  top: 0;
+  z-index: -1;
+}
+.flex{
+  display:flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between; 
+  
+}
+
+header{
+background: linear-gradient(to bottom, rgba(170, 201, 231, 0.52), rgba(73, 159, 194, 0.73));
+padding: 20px 0;
+height: 70px;
+position: relative;
+border-bottom: 1px solid #FF8320;
+z-index: 4;
+
+}
+
+.starting-info{
+  width: 20%;
+  margin: 0px auto;
+  padding: 7px;
+  border: 1px solid #B0C4DE;
+  background: linear-gradient(to bottom, rgba(170, 201, 231, 0.52), rgba(73, 159, 194, 0.73));
+  padding: 20px 0;
+  border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    top: 10%;
+  left: 2%;
+  z-index: 10;
+} 
+
+ /*table styles*/
+ table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: auto;
+  border-spacing: 0px;
+  border-collapse: initial;
+  position: absolute;
+
+}
+
+.hamburger-menu{
+  background-color: transparent;
+  border: 1px solid #FF8320;
+  padding: 3px 5px;
+  width: 30px;
+  cursor: pointer;
+  display:none;
+}
+.hamburger-menu .strip{
+  display: block;
+  height: 1px;
+  background-color: #FF8320;
+  margin: 4px 0;
+  
+}
+
+nav ul{
+  list-style:none;
+  padding: 0;
+  margin: 20px;
+  position: absolute;
+  left: 40%;
+}
+
+nav ul li{
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 50px;
+}
+
+nav ul li a{
+  color: #eee;
+  font-weight: 600;
+
+}
+
+nav ul li a:hover{
+  color: #ff8320;
+}
+
+.logo p{ 
+  height: 5%;
+ font-weight: bold;
+ font-size: 4em;
+ position: absolute;
+ bottom: 5%;
+
+}
+
+/*Styles for battleship*/
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 66vh;
+}
+
+.splash-title {
+  font-family: 'Bangers', cursive;
+  font-size: 10rem;
+}
+
+.btn {
+  font-size: inherit;
+  background-color: hsl(30, 100%, 50%);
+  padding: .5em 1em;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: .2em;
+  color: #333;
+}
+
+.btn:hover, .btn:focus {
+  background-color: hsl(30, 100%, 40%);
+}
+
+.splash-btn {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.splash-btn:first-child {
+  margin-left: 0;
+}
+ 
+
+/* Popup container - can be anything you want */
+.popup1 {
+position: absolute;
+right: 9%;
+bottom: 3%;
+display: inline-block;
+cursor: pointer;
+background: linear-gradient(to bottom, rgba(170, 201, 231, 0.52), rgba(73, 159, 194, 0.73));
+border-style: double;
+color: black;
+padding: 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+opacity: 0.6;
+border-radius: 50%;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+
+}
+.popup {
+position: absolute;
+left: 7%;
+bottom: 3%;
+display: inline-block;
+cursor: pointer;
+background: linear-gradient(to bottom, rgba(170, 201, 231, 0.52), rgba(73, 159, 194, 0.73));
+border-style: double;
+color: black;
+padding: 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+opacity: 0.6;
+border-radius: 50%;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.popup:hover, .popup1:hover{
+opacity: 1.0;
+}
+
+/* The actual popup */
+.popup .popuptext {
+visibility: hidden;
+width: 250px;
+margin: 0px auto;
+padding: 20px;
+border: 1px solid #B0C4DE;
+background: linear-gradient(to bottom, rgba(170, 201, 231, 0.52), rgba(73, 159, 194, 0.73));
+border-radius: 10px 10px 10px 10px;
+position: absolute;
+z-index: 11;
+bottom: 125%;
+left: 10%;
+margin-left: -80px;
+}
+
+.popup1 .popuptext1 {
+visibility: hidden;
+width: 330px;
+margin: 0px auto;
+border: 1px solid #B0C4DE;
+background: linear-gradient(to bottom, rgba(170, 201, 231, 0.52), rgba(73, 159, 194, 0.73));
+border-radius: 10px 10px 10px 10px;
+padding: 0px 20px 0px 0px;
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: -75%;
+
+}
+
+/* Popup arrow */
+.popup .popuptext::after{
+content: "";
+position: absolute;
+top: 100%;
+left: 40%;
+margin-left: -3px;
+border-width: 7px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+.popup1 .popuptext1::after{
+content: "";
+position: absolute;
+top: 100%;
+left: 45%;
+border-width: 7px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+visibility: visible;
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s;
+}
+.popup1 .show {
+visibility: visible;
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+from {opacity: 0;} 
+to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity:1 ;}
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 14;
+ 
+}
+#players{
+  position: absolute;
+  right: 9%;
+  top: 17%;
+  width: 50px;
+}
+
+.battleship-grid {
+  margin: 2vmin;
+  display: grid;
+  background-color: hsl(200, 100%, 50%);
+  grid-template-rows: repeat(10, 4.6vmin);
+  grid-template-columns: repeat(10, 4.6vmin);
+}
+
+.grid-computer > .taken,
+.grid-computer > .boom {
+  background-color: hsl(200, 100%, 50%) !important;
+  border-radius: 0 !important;
+}
+
+.taken,
+.ship {
+  position: relative;
+  background-color: hsl(0, 0%, 80%);
+}
+
+.taken.start.vertical,
+.taken.start.vertical::before {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.taken.end.vertical,
+.taken.end.vertical::before {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.taken.start.horizontal,
+.taken.start.horizontal::before {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.taken.end.horizontal,
+.taken.end.horizontal::before {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.taken.vertical::before,
+.taken.horizontal::before {
+  content: '';
+  position: absolute;
+  border: .3vmin solid white;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+}
+
+.taken.horizontal::before {
+  animation: ripplesY 3s linear infinite;
+  border-left: none;
+  border-right: none;
+}
+
+.taken.vertical::before {
+  animation: ripplesX 3s linear infinite;
+  border-top: none;
+  border-bottom: none;
+}
+
+@keyframes ripplesX {
+  0% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleX(1.5);
+  }
+}
+
+@keyframes ripplesY {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(1.5);
+  }
+}
+
+.grid-display {
+  display: flex;
+
+}
+
+.ship > div {
+  width: 4.6vmin;
+  height: 4.6vmin;
+}
+
+.ship {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vmin;
+  width: calc(4.6vmin * var(--width, 1));
+  height: calc(4.6vmin * var(--height, 1));
+  border-radius: 2.3vmin;
+}
+
+.battleship-grid div {
+  border: 1px solid hsla(0, 0%, 100%, .2);
+  
+}
+
+.destroyer-container {
+  --width: 2;
+}
+
+.destroyer-container-vertical {
+  --height: 2;
+  --width: 1;
+}
+
+.submarine-container,
+.cruiser-container {
+  --width: 3;
+}
+
+.submarine-container-vertical,
+.cruiser-container-vertical {
+  --height: 3;
+  --width: 1;
+}
+
+.battleship-container {
+  --width: 4;
+}
+
+.battleship-container-vertical {
+  --height: 4;
+  --width: 1;
+}
+
+.carrier-container {
+  --width: 5;
+}
+
+.carrier-container-vertical {
+  --height: 5;
+  --width: 1;
+}
+
+.hidden-info {
+  font-size: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+  
+
+}
+
+
+.info-text {
+  margin: 1rem;
+  
+}
+
+.miss,
+.boom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boom::after,
+.miss::after {
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+  width: 2vmin;
+  height: 2vmin;
+}
+
+.miss::after {
+  background-color: white;
+}
+
+.boom::after {
+  background-color: red;
+}
+
+.miss::before {
+  content: '';
+  position: absolute;
+  animation: hit .2s ease-out forwards;
+  border: 1vmin solid white;
+  border-radius: 100%;
+  width: 2vmin;
+  height: 2vmin;
+}
+
+.boom {
+  animation: boom .2s ease-out forwards;
+}
+
+@keyframes hit {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(4);
+  }
+}
+
+@keyframes boom {
+  0% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: hsl(0, 0%, 80%);
+  }
+}
+
+.player {
+  margin: 2vmin;
+  font-size:1.8em;
+  
+}
+
+.connected, .ready {
+  font-weight: normal;
+  opacity: .25;
+  text-decoration: line-through;
+}
+
+.connected.active,
+.ready.active {
+  opacity: 1;
+  text-decoration: none;
+}
+
+
