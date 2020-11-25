@@ -17,6 +17,6 @@
 The Ships are first arranged, The player who destroys the totality of their opponent's fleet wins the game. After the player positions their ships in, each opponent fires upon squares in the adverse grid and tries to sink their enemies fleet in turns.
 
 
-![BattleshipHomepage](https://github.com/F28WP-Dubai-WP208/WP-Coursework/blob/master/WP-CW/Battleship/public/pics/BattleshipHomepage.png)
-![BattleshipHomepage](https://github.com/F28WP-Dubai-WP208/WP-Coursework/blob/master/WP-CW/Battleship/public/pics/BattleshipGame.png)
+![BattleshipHomepage](https://github.com/F28WP-Dubai-WP208/WP-Coursework/blob/master/Battleship/public/pics/BattleshipGame.png)
+![BattleshipHomepage](https://github.com/F28WP-Dubai-WP208/WP-Coursework/blob/master/Battleship/public/pics/BattleshipHomepage.png)
 
