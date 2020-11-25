@@ -1,35 +1,22 @@
-# WP-Coursework
+#WP-Coursework Group-WP208
 
+##**Team members**:
+-Aimee Lemma
+-Aaleen Khattak
+-Arsalan Shams
+-Nabeel Alkindly
 
-Game Name : Battleshiip
-
-Game Scenario : Battleship game,
-2 Game modes : Single Player/Multiplayer,
+*Game Name*: Battleship
+*Game Scenario*: Battleship game,
+2 Game modes: Single Player/Multiplayer,
 5 Ship models,
 2 Grids
 
-=======
+========================================================================
+**How to play:**
+The Ships are first arranged, The player who destroys the totality of their opponent's fleet wins the game. After the player positions their ships in, each opponent fires upon squares in the adverse grid and tries to sink their enemies fleet in turns.
 
-we will be using justinmind for the mockup of our game
- the mock up for the website has been uploaded 
- 
 
-Friday: Meeting at 3pm: Team discussed mockups and division of tasks
-JustInMind being used for prototyping
-
-Sunday: Meeting at 5pm: Team discusiion about on their of progress
-mockup done 
-changed from JustInMind to Balsamiq for exporting
-found a game however faced some problems with some of the levels
-html created and ready
-
-Tuesday: Meeting at 11:30: progress discussed
-Found another game
-modified it to suit our game
-
-Monday: Meeting at 12: progress discussed
-Action plan going into the project
-Ways to implement graphics
 
 
 
