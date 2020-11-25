@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const http = require('http')
-const mysql = require('mysql')
+var mysql = require('mysql')
 const dotenv = require('dotenv')
 const cookieParser = require('cookie-parser')
 const PORT = process.env.PORT || 2000
@@ -23,20 +23,13 @@ app.set('view engine', 'hbs');
 // Start server
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 
+
 const db = mysql.createConnection({
   host: process.env.DATABASE_HOST,
   user: process.env.DATABASE_USER,
   password: process.env.DATABASE_PASSWORD,
   database: process.env.DATABASE
 });
-
-db.connect( (error) => {
-  if(error) {
-    console.log(error)
-  } else {
-    console.log("MYSQL Connected...")
-  }
-})
 
 
 // Parse URL-encoded bodies (as sent by HTML forms)
