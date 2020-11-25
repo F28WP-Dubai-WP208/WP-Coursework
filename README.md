@@ -18,4 +18,5 @@ The Ships are first arranged, The player who destroys the totality of their oppo
 
 
 ![BattleshipHomepage](https://github.com/F28WP-Dubai-WP208/WP-Coursework/blob/master/WP-CW/Battleship/public/pics/BattleshipHomepage.png)
+![BattleshipHomepage](https://github.com/F28WP-Dubai-WP208/WP-Coursework/blob/master/WP-CW/Battleship/public/pics/BattleshipGame.png)
 
