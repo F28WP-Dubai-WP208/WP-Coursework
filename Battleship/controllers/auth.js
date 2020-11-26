@@ -12,27 +12,27 @@ const db = mysql.createConnection({
 db.connect(function(err) {
   if (err) throw err;
   //create database
-  const sqlDB = "CREATE DATABASE IF NOT EXISTS `gamelogin`;";
+  const sqlDB = "CREATE DATABASE IF NOT EXISTS `SBttEC5573`;";
   db.query(sqlDB, function(err, result) {
   if (err) throw err;
   console.log('The database has been created');
    });
   //change database
-  db.changeUser({ database: 'gamelogin' }, function(err) {
+  db.changeUser({ database: 'SBttEC5573' }, function(err) {
   if (err) {
   console.log('error in changing database', err);
   return;
    }
    });
  
-  const sqlUser = "Create table if not exists `gamelogin`.`users`(`id` int(50) NOT NULL auto_increment,`name` varchar(50) NOT NULL,`email` varchar(50) NOT NULL,`password` varchar(100) NOT NULL,PRIMARY KEY (`id`)); ";
+  const sqlUser = "Create table if not exists `SBttEC5573`.`users`(id int(50) NOT NULL auto_increment,name varchar(50) NOT NULL,email varchar(50) NOT NULL,password varchar(100) NOT NULL,PRIMARY KEY (id)); ";
   db.query(sqlUser, function(err, result) {
   if (err) throw err;
   console.log("Users table created");
    });
-   });
+});
 
-   exports.login = async (req, res) => {
+exports.login = async (req, res) => {
     try {
       console.log("email working",req.body);
       const email = req.body.email;
