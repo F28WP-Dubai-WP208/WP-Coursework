@@ -30,6 +30,7 @@ Once you have download the code, open up the zip file, extract and have it open 
 -***npm i*** or ***npm install***
 
 -***npm i --save nodemon***
+
 once everything has been installed, write "***npm start***" and you are good to go!
 
 
