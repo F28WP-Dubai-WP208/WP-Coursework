@@ -27,10 +27,10 @@
 
 Once you have download the code, open up the zip file, extract and have it open on vs code. Open the battleship in integrated terminale and write the following:
 
-^ -npm i or npm install
+-***npm i*** or ***npm install***
 
-^ -npm i --save nodemon
-once everything has been installed, write "npm start" and you are good to go!
+-***npm i --save nodemon***
+once everything has been installed, write "***npm start***" and you are good to go!
 
 
 **How to play:**
