@@ -1,9 +1,13 @@
 #WP-Coursework Group-WP208
 
 ##**Team members**:
+
 -Aimee Lemma
+
 -Aaleen Khattak
+
 -Arsalan Shams
+
 -Nabeel Alkindly
 
 *Game Name*: Battleship
