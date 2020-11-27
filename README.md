@@ -1,5 +1,7 @@
 #WP-Coursework Group-WP208
 
+Live server of our project: https://batttleship-wp.herokuapp.com/
+
 ##**Team members**:
 
 -Aimee Lemma
