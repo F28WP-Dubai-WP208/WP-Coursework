@@ -29,7 +29,7 @@ The trailer for our game: https://youtu.be/TgSWem18W-A
 
 **Installations**
 
-Once you have download the code, open up the zip file, extract and have it open on vs code. Open the battleship in integrated terminale and write the following:
+Once you have downloaded the code, open up the zip file, extract and have it open on vs code. Open the battleship in integrated terminale and write the following:
 
 -***npm i*** or ***npm install***
 
