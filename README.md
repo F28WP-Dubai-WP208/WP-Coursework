@@ -3,7 +3,8 @@
 Live server of our project: https://batttleship-wp.herokuapp.com/
 
 The trailer for our game: https://youtu.be/TgSWem18W-A
-##**Team members**:
+
+#**Team members**:
 
 -Aimee Lemma
 
